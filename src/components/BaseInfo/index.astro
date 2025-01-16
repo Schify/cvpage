@@ -7,12 +7,13 @@ import Phone from "./v0/Phone.astro";
 
 interface Props {
     data: BaseInfo;
+    langs: { lang: string; link: string }[];
 }
 
-const { data } = Astro.props;
+const { data, langs } = Astro.props;
 ---
 
-<div class="font-serif text-right">
+<div class="font-serif text-right flex flex-col h-full">
     <h1 class="text-5xl my-2">{data.name}</h1>
 
     {
@@ -29,4 +30,29 @@ const { data } = Astro.props;
             }
         })
     }
+
+    <div class="space flex-auto"></div>
+
+    <div class="language-switcher font-display">
+        {
+            langs.map(({ lang, link }) => (
+                <a href={link} class="lang-option hover:underline" lang={lang}>
+                    {lang}
+                </a>
+            ))
+        }
+    </div>
+
+    <div class="font-display text-xs text-gray-6">
+        Powered by <a
+            href="https://github.com/reonokiy/cvpage"
+            class="hover:underline">cvpage</a
+        >
+    </div>
 </div>
+
+<style>
+    .lang-option + .lang-option::before {
+        content: " | ";
+    }
+</style>
