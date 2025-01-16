@@ -18,7 +18,7 @@ content:
     content:
       - type: v0.markdown
         content: |
-          As a [dedicated researcher](https://google.com) in computational linguistics, I am passionate about exploring the intersection of artificial intelligence and natural language processing. With a Ph.D. from Stanford University and five years of postdoctoral experience at MIT, my work focuses on developing advanced machine learning models that enhance human-computer interaction. I have published over 20 peer-reviewed articles in top-tier journals and conferences, including NeurIPS and ACL. My current research aims to create more intuitive and context-aware language understanding systems. My interdisciplinary approach combines computational techniques with cognitive science principles, seeking to push the boundaries of intelligent communication technologies.
+          As a [dedicated researcher](https://example.com) in computational linguistics, I am passionate about exploring the intersection of artificial intelligence and natural language processing. With a Ph.D. from Stanford University and five years of postdoctoral experience at MIT, my work focuses on developing advanced machine learning models that enhance human-computer interaction. I have published over 20 peer-reviewed articles in top-tier journals and conferences, including NeurIPS and ACL. My current research aims to create more intuitive and context-aware language understanding systems. My interdisciplinary approach combines computational techniques with cognitive science principles, seeking to push the boundaries of intelligent communication technologies.
   - title: Education
     content:
       - type: v0.unordered-list-with-time
