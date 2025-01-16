@@ -15,7 +15,9 @@ export default defineConfig({
     },
     transformers: [transformerDirectives()],
     presets: [
-        presetUno(),
+        presetUno({
+            dark: 'media'
+        }),
         presetAttributify(),
         presetTagify(),
         presetIcons({

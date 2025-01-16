@@ -7,14 +7,14 @@
         <meta name="generator" content={Astro.generator} />
         <title>CV</title>
     </head>
-    <body>
+    <body class="dark:bg-dark dark:text-light-3">
         <main class="flex h-full">
             <section
                 class="baseinfo flex-none w-80 flex flex-col items-end py-24vh px-16"
             >
                 <slot name="baseinfo" />
             </section>
-            <div class="flex-none w-0.4 my-12 bg-black/60"></div>
+            <div class="flex-none w-0.4 my-12 bg-dark-1 @dark:bg-light-9"></div>
             <section class="flex-auto">
                 <slot />
             </section>
@@ -41,7 +41,7 @@
     }
 
     .cv-info a {
-        color: #0e52a1;
+        --at-apply: text-blue-8 "dark:text-blue-4";
         text-decoration: none;
     }
 </style>
