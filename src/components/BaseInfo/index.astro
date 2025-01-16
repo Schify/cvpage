@@ -1,0 +1,32 @@
+---
+import type { BaseInfo } from "../../utils/types";
+import Email from "./v0/Email.astro";
+import Github from "./v0/Github.astro";
+import GoogleScholar from "./v0/GoogleScholar.astro";
+import Phone from "./v0/Phone.astro";
+
+interface Props {
+    data: BaseInfo;
+}
+
+const { data } = Astro.props;
+---
+
+<div class="font-serif text-right">
+    <h1 class="text-5xl my-2">{data.name}</h1>
+
+    {
+        data.info.map((info) => {
+            switch (info.type) {
+                case "v0.phone":
+                    return <Phone data={info} />;
+                case "v0.email":
+                    return <Email data={info} />;
+                case "v0.google-scholar":
+                    return <GoogleScholar data={info} />;
+                case "v0.github":
+                    return <Github data={info} />;
+            }
+        })
+    }
+</div>

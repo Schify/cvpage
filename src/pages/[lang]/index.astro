@@ -1,0 +1,30 @@
+---
+import { getCollection } from "astro:content";
+import CV from "../../layouts/CV.astro";
+import BaseInfo from "../../components/BaseInfo/index.astro";
+import CVInfo from "../../components/CVInfo/index.astro";
+import { extractBaseInfo } from "../../utils/cv";
+
+export async function getStaticPaths() {
+    const cv = await getCollection("cv");
+    return cv.map((cv) => {
+        const baseInfo = extractBaseInfo(cv.id, cv.data);
+        return {
+            params: {
+                lang: baseInfo.lang,
+            },
+            props: {
+                baseInfo,
+                cv,
+            },
+        };
+    });
+}
+
+const { baseInfo, cv } = Astro.props;
+---
+
+<CV>
+    <BaseInfo data={baseInfo} slot="baseinfo" />
+    <CVInfo data={cv.data.content} />
+</CV>
