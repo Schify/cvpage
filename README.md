@@ -1,48 +1,50 @@
-# Astro Starter Kit: Basics
+# CVPage
 
-```sh
-npm create astro@latest -- --template basics
+![Demo](./public/demo.png)
+
+## Features
+
+- Dark Mode Suppport
+- Multiple Language Support
+
+## Installation
+
+To Build this project locally, you need to have Node.js and pnpm installed on your machine. Follow these steps:
+
+```bash
+git clone https://github.com/reonokiy/cvpage
+cd cvpage
+pnpm install
+pnpm run dev
+
+# for building for production
+pnpm run build
+# pnpm run preview
+```
+## Configuration
+
+All configuration is done in the `content/` directory.
+
+### `content/cv`
+
+Currently only yaml files in the `content/cv` folder is available. Filename should be in format of `[lang].yaml`. For example, `en.yaml`, `zh.yaml`.
+
+#### Components
+
+- baseinfo
+    - `v0.email`
+    - `v0.phone`
+    - `v0.github`
+    - `v0.google-scholar`
+- cvinfo
+    - `v0.markdown` 
+    - `v0.unordered-list`
+    - `v0.unordered-list-with-item`
+
+You can find all schemas in the [schema](./schema) directory.
+
+```
+# yaml-language-server: $schema=../../schema/cv.json
 ```
 
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/withastro/astro/tree/latest/examples/basics)
-[![Open with CodeSandbox](https://assets.codesandbox.io/github/button-edit-lime.svg)](https://codesandbox.io/p/sandbox/github/withastro/astro/tree/latest/examples/basics)
-[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/withastro/astro?devcontainer_path=.devcontainer/basics/devcontainer.json)
-
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
-
-![just-the-basics](https://github.com/withastro/astro/assets/2244813/a0a5533c-a856-4198-8470-2d67b1d7c554)
-
-## 🚀 Project Structure
-
-Inside of your Astro project, you'll see the following folders and files:
-
-```text
-/
-├── public/
-│   └── favicon.svg
-├── src/
-│   ├── layouts/
-│   │   └── Layout.astro
-│   └── pages/
-│       └── index.astro
-└── package.json
-```
-
-To learn more about the folder structure of an Astro project, refer to [our guide on project structure](https://docs.astro.build/en/basics/project-structure/).
-
-## 🧞 Commands
-
-All commands are run from the root of the project, from a terminal:
-
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `npm install`             | Installs dependencies                            |
-| `npm run dev`             | Starts local dev server at `localhost:4321`      |
-| `npm run build`           | Build your production site to `./dist/`          |
-| `npm run preview`         | Preview your build locally, before deploying     |
-| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `npm run astro -- --help` | Get help using the Astro CLI                     |
-
-## 👀 Want to learn more?
-
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+With this line on the top of your YAML file, you can get schema validation and auto-completion support.
