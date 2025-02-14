@@ -1,46 +1,70 @@
 # yaml-language-server: $schema=../../schema/cv.json
-name: Li Hua
-lang: en
-info:
-  - type: v0.email
-    email: lihua@example.com
-  - type: v0.phone
-    number: +86 1234567890
-  # uncomment to avoid link to actual users in demo
-  # - type: v0.github
-  #   name: github.com/lihua
-  #   username: lihua
-  - type: v0.google-scholar
-    name: Google Scholar
-    id: "xxxxxxxxx"
 content:
-  - title: Introduction
-    content:
-      - type: v0.markdown
-        content: |
-          As a [dedicated researcher](https://example.com) in computational linguistics, I am passionate about exploring the intersection of artificial intelligence and natural language processing. With a Ph.D. from Stanford University and five years of postdoctoral experience at MIT, my work focuses on developing advanced machine learning models that enhance human-computer interaction. I have published over 20 peer-reviewed articles in top-tier journals and conferences, including NeurIPS and ACL. My current research aims to create more intuitive and context-aware language understanding systems. My interdisciplinary approach combines computational techniques with cognitive science principles, seeking to push the boundaries of intelligent communication technologies.
-  - title: Education
-    content:
-      - type: v0.unordered-list-with-time
-        title: Ph.D. in Computational Linguistics
-        time: 2014 - 2019
-        content: |
-          - Dissertation: *Adaptive Machine Learning Models for Natural Language Understanding*
-          - Advisor: Prof. Christopher Manning
-          - **Key Research:** Advanced neural network architectures for semantic parsing
-
-      - type: v0.unordered-list-with-time
-        title: Massachusetts Institute of Technology (MIT), M.S. in Computer Science
-        time: 2012 - 2014
-        content: |
-          - Concentration in Artificial Intelligence
-          - Graduated with *Highest Honors*
-          - Research Assistant, Natural Language Processing Lab
-
-      - type: v0.unordered-list-with-time
-        title: University of California, Berkeley. B.S. in Computer Science
-        time: 2008 - 2012
-        content: |
-          - Minor in Cognitive Science
-          - Dean's List (All Semesters)
-          - Undergraduate Research Fellowship
+- content:
+  - content: Mathematics, programming, deep learning, physics, mechanics, fluid dynamics,
+      CFD, control theory, MPC, machine learning, data science, Linux, Raspberry Pi
+      (RPI), HomeAssistant, Godot
+    type: v0.markdown
+  title: Interests
+- content:
+  - content: "- In the field of computer science, heavily focusing on scientific computation\
+      \ and numerical methods \n- Master Thesis: _Comparison of hybrid fluid-kinetic\
+      \ particle methods in high-collisional regimes_ (with code written in Julia)\
+      \ \n- Scientific computing with Fortran, C++, MATLAB and Python. Basics of OMP,\
+      \ MPI based parallelization. \n- Classes in numerical methods (linear algebra,\
+      \ classical and Monte Carlo integration techniques, CFD), data science (SVM,\
+      \ HMM, Genetic Algorithm, etc) and control theory (MPC, system identification),\
+      \ software engineering (gitlab Continuous Integration and Deployment (CI/CD),\
+      \ unit tests). "
+    time: 09/2022 - 02/2025
+    title: 'KU Leuven: MSc in Mathematical Engineering'
+    type: v0.unordered-list-with-time
+  - content: "- Degree: excellent with highest honours \n- Bachelor Thesis: _Control\
+      \ of mechanical systems based on the calculus of variations_ (theory and programming\
+      \ oriented, written in English and Python) \n- Specialization: Mechanical Modelling "
+    time: 09/2018 - 06/2022
+    title: 'Budapest University of Technology and Economics (BME): BSc in Mechatronical
+      Engineering'
+    type: v0.unordered-list-with-time
+  - content: '- Individual Project: Causal Wiener Filter programming '
+    time: 02/2021 - 06/2021
+    title: 'University of Twente: Exchange Semester'
+    type: v0.unordered-list-with-time
+  title: Education
+- content:
+  - content: "- Development of data pipeline for NLP based application (preprocessing)\
+      \ \n- Dataset analysis using embedding tools (BERT) \n- Python programming,\
+      \ NLP, data science, git, scrum, pandas, matplotlib, HuggingFace, BERT "
+    time: 07/2023 - 08/2023
+    title: 'Panenco: Data Science Intern'
+    type: v0.unordered-list-with-time
+  - content: "- Dataset generation, scripting for various tasks \n- 3D data classifier\
+      \ using machine learning and classical techniques \n- Python programming, tensorflow,\
+      \ pandas, git, docstrings "
+    time: 07/2021 - 08/2021
+    title: 'eCon Engineering Ltd.: Engineer Intern'
+    type: v0.unordered-list-with-time
+  - content: "- Teaching assistant for first year engineer and physics students in\
+      \ their Analysis course (2 semesters) \n- Practicum leading, exam correction\
+      \ for engineering students "
+    time: 2019/20, 2020/21/I, 2021/22/I
+    title: 'BME - Faculty of Natural Sciences: Teaching Assistant'
+    type: v0.unordered-list-with-time
+  - content: '- Orienting foreign teams on an international youth sports festival '
+    time: summer of 2019, 2017 AND 2016
+    title: "Youth Football Festival Kaposv\xE1r: Volunteer guide (and assistant organizer)"
+    type: v0.unordered-list-with-time
+  title: Experience
+- content:
+  - content: "\n\t\n* Mathematically minded, abstract problem solver \n* Deep Learning\
+      \ (Keras), Data Science experience\n\n* B2 driver's license (2018)\n"
+    type: v0.markdown
+  title: Misc
+info:
+- email: schifferer.andras@gmail.com
+  type: v0.email
+- name: github.com/Schify
+  type: v0.github
+  username: Schify
+lang: en
+name: "Andr\xE1s Schifferer"
