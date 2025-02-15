@@ -8,6 +8,7 @@ export default defineConfig({
     },
     output: "static",
     base: "/cvpages/",
+    site: "https://schify.github.io/",
     integrations: [
         UnoCSS({
             injectReset: true
