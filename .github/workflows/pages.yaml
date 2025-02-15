@@ -21,7 +21,7 @@ jobs:
         with:
             path: .
             node-version: 20 
-            package-manager: npm@latest
+            package-manager: pnpm@latest
 
   deploy:
     needs: build

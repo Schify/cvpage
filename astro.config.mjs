@@ -4,8 +4,10 @@ import UnoCSS from 'unocss/astro'
 
 export default defineConfig({
     redirects: {
-        '/': '/en',
+        '/': '/cvpages/en',
     },
+    output: "static",
+    base: "/cvpages/",
     integrations: [
         UnoCSS({
             injectReset: true
